@@ -1,0 +1,16 @@
+mixin team-item(href, alt, name, position)
+	.team__item
+		img.team__item-img(src=href alt=alt)
+		.team__item-name= name
+		.team__item-position= position
+
+section.team
+	.wrapper
+		.title The team
+		.team__items
+			+team-item('source/img/team-1.jpg', 'Photo of Richard Hendricks', 'Richard Hendricks', 'Founder & CEO')
+			+team-item('source/img/team-2.jpg', 'Photo of Dinesh Chugtai', 'Dinesh Chugtai', 'Senior Programmer')
+			+team-item('source/img/team-3.jpg', 'Photo of Bertram Gilfoyle', 'Bertram Gilfoyle', 'Chief Systems Architect')
+			+team-item('source/img/team-4.jpg', 'Photo of Jared Dunn', 'Jared Dunn', 'Chief Operating Officer')
+			+team-item('source/img/team-5.jpg', 'Photo of Monica Hall', 'Monica Hall', 'Chief Financial Officer')
+			+team-item('source/img/team-6.jpg', 'Photo of Majority Investor', 'Majority Investor', 'Nelson Bighetti')
