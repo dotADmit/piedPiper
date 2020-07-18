@@ -247,3 +247,22 @@ body {
   line-height: 21.09px;
   font-style: italic;
 }
+
+.footer {
+  background: #333333;
+  color: white;
+  font-size: 18px;
+  line-height: 21.09px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer p {
+  width: 540px;
+  text-align: center;
+  padding: 48px 0px 64px 0px;
+}

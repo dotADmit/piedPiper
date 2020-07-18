@@ -148,3 +148,17 @@ body {
 	line-height: 21.09px;
 	font-style: italic;
 }
+
+.footer {
+	background: #333333;
+	color: white;
+	font-size: 18px;
+	line-height: 21.09px;
+	display: flex;
+	justify-content: center;
+	p {
+		width: 540px;
+		text-align: center;
+		padding: 48px 0px 64px 0px;		
+	}
+}
