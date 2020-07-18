@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /*Обнуление*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet"');
 * {
   padding: 0;
   margin: 0;
@@ -53,6 +54,7 @@ button::-moz-focus-inner {
 
 a, a:visited {
   text-decoration: none;
+  color: white;
 }
 
 a:hover {
@@ -74,5 +76,46 @@ h1, h2, h3, h4, h5, h6 {
 
 /*--------------------*/
 body {
-  background: green;
+  font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0 55px;
+  width: 1219px;
+}
+
+.header__top {
+  background: #007765;
+}
+
+.header__top-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 0;
+}
+
+.header__list-item {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 24px;
+  padding: 8px;
+  position: relative;
+}
+
+.header__list-item::after {
+  content: "|";
+  position: absolute;
+  color: white;
+  top: 5px;
+  right: -4px;
+  line-height: 28px;
+}
+
+.header__list-item:last-child::after {
+  content: "";
 }
