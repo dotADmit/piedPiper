@@ -11,7 +11,7 @@ body {
 	width: 1219px;
 }
 
-.header__top {
+.header {
 	background: #007765;
 }
 
@@ -38,5 +38,16 @@ body {
 	&:last-child::after{
 		content: "";
 	}
+}
+
+.header__content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 403px;
+	font-size: 72px;
+	color: white;
+	background: url("../source/img/header.jpg") no-repeat;
+	background-size: cover;
 }
 
