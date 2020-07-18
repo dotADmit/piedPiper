@@ -85,8 +85,11 @@ body {
   width: 1219px;
 }
 
-.header {
+.header__top {
+  position: fixed;
+  z-index: 10;
   background: #007765;
+  width: 100%;
 }
 
 .header__top-inner {
@@ -121,21 +124,17 @@ body {
 }
 
 .header__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 403px;
+  text-align: center;
+  height: 487px;
   font-size: 72px;
   font-weight: 500;
   color: white;
   background: url("../source/img/header.jpg") no-repeat;
   background-size: cover;
+}
+
+.header__content h1 {
+  padding-top: 244px;
 }
 
 .title {

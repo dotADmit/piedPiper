@@ -11,8 +11,12 @@ body {
 	width: 1219px;
 }
 
-.header {
+
+.header__top {
+	position: fixed;
+	z-index: 10;
 	background: #007765;
+	width: 100%;
 }
 
 .header__top-inner {
@@ -41,15 +45,16 @@ body {
 }
 
 .header__content {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 403px;
+	text-align: center;
+	height: 487px;
 	font-size: 72px;
 	font-weight: 500;
 	color: white;
 	background: url("../source/img/header.jpg") no-repeat;
 	background-size: cover;
+	h1 {
+		padding-top: 244px;
+	}
 }
 
 .title {
